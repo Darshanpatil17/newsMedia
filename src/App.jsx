@@ -10,7 +10,7 @@ function App() {
   const [query, setQuery] = useState('');
   
   const API_KEY = 'e22a10c39a3c4dd4beb6a21e32aaa9b0';  // Replace with your API key from NewsAPI
-  const URL = `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`;
+  const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}&q=${query}`;;
 
   // Fetch news when the component loads or when the search query changes
   useEffect(() => {
